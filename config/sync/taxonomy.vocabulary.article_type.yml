@@ -1,0 +1,8 @@
+uuid: 69b29b63-9fd3-4b3a-b2cb-b6bc5eca6b93
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article Type'
+vid: article_type
+description: 'Is it a video, podcast, document, article etc'
+weight: 0

@@ -1,0 +1,117 @@
+uuid: 1240a89a-e8bd-47f2-9783-74cff7ecfddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.field_format
+    - field.field.node.article.field_image_media
+    - field.field.node.article.field_media_files
+    - field.field.node.article.field_references
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - ds
+    - fences
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class:
+            container: container
+          content: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      content:
+        - node_title
+        - node_post_date
+        - field_format
+        - node_link
+        - field_tags
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h2
+          class: ''
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': 'btn btn-primary'
+          wrapper: ''
+          class: ''
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_olivero_medium
+_core:
+  default_config_hash: 83jX5ChAGdMzOxiDA_B1NjgebVMuD8lNVDgClg_QVP8
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_format:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: span
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: span
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 4
+    region: content
+hidden:
+  body: true
+  field_image_media: true
+  field_media_files: true
+  field_references: true
+  links: true

@@ -1,0 +1,30 @@
+uuid: 75d7b649-e091-47f4-b40a-4971df50a274
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:37216837-17a4-4cef-9f46-f68030ce84c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - xr
+id: headerimage
+theme: xr
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:37216837-17a4-4cef-9f46-f68030ce84c6'
+settings:
+  id: 'block_content:37216837-17a4-4cef-9f46-f68030ce84c6'
+  label: 'Header Image'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/events"

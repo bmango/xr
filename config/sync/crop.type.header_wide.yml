@@ -1,0 +1,12 @@
+uuid: 633920f1-3dbd-4d6a-8eec-8d4b6618329f
+langcode: en
+status: true
+dependencies: {  }
+label: 'Header Wide'
+id: header_wide
+description: ''
+aspect_ratio: '3:1'
+soft_limit_width: 360
+soft_limit_height: 200
+hard_limit_width: 300
+hard_limit_height: 150

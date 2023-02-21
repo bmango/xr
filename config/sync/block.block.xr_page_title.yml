@@ -1,0 +1,43 @@
+uuid: f6cca3fb-8b09-4a27-880f-16b9495e0a36
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - node
+    - system
+  theme:
+    - xr
+_core:
+  default_config_hash: HN-zVAPkx8Cx6pCD92llaBXpg9GWdDAXBpvVkC0VPGU
+id: xr_page_title
+theme: xr
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+  'entity_bundle:contact_message':
+    id: 'entity_bundle:contact_message'
+    negate: false
+    context_mapping:
+      contact_message: '@ds.ds_block_field_entity_context:contact_message'
+    bundles:
+      feedback: feedback
+      personal: personal
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/\r\n/<front>"

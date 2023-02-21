@@ -1,0 +1,26 @@
+uuid: 1f416846-d151-4f55-86e9-a137622096cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.header_wide
+  module:
+    - crop
+name: header_wide
+label: 'Header Wide'
+effects:
+  b67dea57-b852-4dd3-b2b8-a12dea0994ce:
+    uuid: b67dea57-b852-4dd3-b2b8-a12dea0994ce
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 2560
+      height: 900
+      anchor: center-center
+  47035899-5f07-41c5-8048-eb4f744c330f:
+    uuid: 47035899-5f07-41c5-8048-eb4f744c330f
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: header_wide
+      automatic_crop_provider: null

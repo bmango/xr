@@ -1,0 +1,165 @@
+uuid: 0e278663-26d3-4799-8560-293965c3565f
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - xr
+id: socialmedialinks
+theme: xr
+region: nav_branding
+weight: -5
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    github:
+      value: ''
+      description: ''
+      weight: '-10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-9'
+    website:
+      value: ''
+      description: ''
+      weight: '-8'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-7'
+    meetup:
+      value: ''
+      description: ''
+      weight: '-6'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-5'
+    instagram:
+      value: xrwandsworth
+      description: ''
+      weight: '-4'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-3'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-2'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '-1'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '0'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '1'
+    facebook:
+      value: XRWandsworth
+      description: ''
+      weight: '2'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '3'
+    patreon:
+      value: ''
+      description: ''
+      weight: '4'
+    rss:
+      value: ''
+      description: ''
+      weight: '5'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '6'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '7'
+    xing:
+      value: ''
+      description: ''
+      weight: '8'
+    behance:
+      value: ''
+      description: ''
+      weight: '9'
+    flickr:
+      value: ''
+      description: ''
+      weight: '10'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '11'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '12'
+    telegram:
+      value: ''
+      description: ''
+      weight: '13'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '14'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '15'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '16'
+    twitter:
+      value: xrwandsworth
+      description: ''
+      weight: '17'
+    email:
+      value: ''
+      description: ''
+      weight: '18'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '19'
+    youtube:
+      value: channel/UCX7oV5SFzpVTnvpZOerOybA
+      description: ''
+      weight: '20'
+    contact:
+      value: ''
+      description: ''
+      weight: '21'
+    amazon:
+      value: ''
+      description: ''
+      weight: '22'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

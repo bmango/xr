@@ -1,0 +1,22 @@
+uuid: 65ffd3d6-66d8-41d2-a9fc-a1e154cadb3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xr
+_core:
+  default_config_hash: gRwfHLKi4mGQTbVdSfssxx4EXCXHKb2aG0pqBrFzwKs
+id: xr_content
+theme: xr
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 36ed7974-4a03-40f4-9709-16ba85b0407f
+langcode: en
+status: true
+dependencies: {  }
+id: insert_block
+label: 'Insert Block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: db736d00-94fb-44ee-b297-790c02e0fa1f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - xr
+_core:
+  default_config_hash: pgLY6khdXm4oUDO7x9ifNb3J0jcZhUgNt_xZiJpO6eg
+id: xr_account_menu
+theme: xr
+region: nav_additional
+weight: -8
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

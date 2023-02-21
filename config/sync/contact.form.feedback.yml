@@ -1,0 +1,15 @@
+uuid: 89c8ac0b-e76a-4948-b7f8-463fba3dfa51
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@xrwandsworth.org.uk
+  - xrwandsworth@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

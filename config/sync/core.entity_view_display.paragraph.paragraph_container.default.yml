@@ -1,0 +1,37 @@
+uuid: c20228ed-37fd-414a-8a3d-b863434b322e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_container.field_paragraph
+    - paragraphs.paragraphs_type.paragraph_container
+  module:
+    - ds
+    - entity_reference_revisions
+    - fences
+id: paragraph.paragraph_container.default
+targetEntityType: paragraph
+bundle: paragraph_container
+mode: default
+content:
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+      fences:
+        fences_field_tag: div
+        fences_field_classes: container
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: container
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden: {  }

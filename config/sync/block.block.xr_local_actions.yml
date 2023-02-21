@@ -1,0 +1,20 @@
+uuid: 9bf5c51f-3ec3-4a66-b354-e487b756230d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - xr
+_core:
+  default_config_hash: q-ejnBmF9yiutKtohq6jwldgL18TP99Q8fiMzhUWhgI
+id: xr_local_actions
+theme: xr
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

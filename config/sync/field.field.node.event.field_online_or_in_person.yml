@@ -1,0 +1,21 @@
+uuid: 89f4e4dc-98f6-47b8-b0e9-640551a3dd09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_online_or_in_person
+    - node.type.event
+  module:
+    - options
+id: node.event.field_online_or_in_person
+field_name: field_online_or_in_person
+entity_type: node
+bundle: event
+label: 'Event Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

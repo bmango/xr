@@ -1,0 +1,27 @@
+uuid: 4b703b69-7671-4218-9ec8-8aeed0de2d71
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+  theme:
+    - xr
+third_party_settings:
+  block_classes:
+    block_class: container
+_core:
+  default_config_hash: FCD54dfHKt_WkjrwKzZd8iyFRIXsypD2fP_CbBGgVu8
+id: xr_local_tasks
+theme: xr
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

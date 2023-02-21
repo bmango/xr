@@ -1,0 +1,23 @@
+uuid: 04553323-11f1-4625-9c8c-292fda538b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.event
+  module:
+    - link
+id: node.event.field_link
+field_name: field_link
+entity_type: node
+bundle: event
+label: Link
+description: "Enter the zoom link, registration link or other type of link if there is one.\r\nIn the title if it is a zoom link enter: \"Zoom Link\" otherwise \"Register Link\" etc."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

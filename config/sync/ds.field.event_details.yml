@@ -1,0 +1,11 @@
+id: event_details
+label: 'Event Details'
+ui_limit: 'event|*'
+type: token
+type_label: 'Token field'
+entities:
+  node: node
+properties:
+  content:
+    value: '<h4>Event Details</h4>'
+    format: basic_html

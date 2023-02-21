@@ -1,0 +1,10 @@
+uuid: 4d3fc322-c6e1-4004-aa92-ac21b3342f76
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.xrwd_original
+label: 'XRWD Original'
+targetEntityType: media
+cache: true
