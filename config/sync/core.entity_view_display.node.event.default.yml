@@ -6,9 +6,13 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_address
     - field.field.node.event.field_date
+    - field.field.node.event.field_gallery
     - field.field.node.event.field_image_media
     - field.field.node.event.field_link
     - field.field.node.event.field_online_or_in_person
+    - field.field.node.event.field_references
+    - field.field.node.event.field_resource
+    - field.field.node.event.field_tags
     - node.type.event
   module:
     - address
@@ -45,6 +49,15 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_gallery:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
   field_image_media:
     type: entity_reference_label
     label: above
@@ -71,6 +84,36 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_references:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_resource:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   links:
     settings: {  }

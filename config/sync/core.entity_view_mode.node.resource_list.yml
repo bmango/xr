@@ -1,0 +1,10 @@
+uuid: 33590633-b847-40d2-9551-85e90faa4a7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.resource_list
+label: 'Resource List'
+targetEntityType: node
+cache: true

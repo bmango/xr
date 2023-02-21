@@ -1,9 +1,9 @@
-uuid: dd83b601-4761-4c14-a6bc-4e47c12863de
+uuid: 0e4e7c01-f5a5-4498-be6e-a4f67535b361
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.resource_teaser
     - field.field.node.event.body
     - field.field.node.event.field_address
     - field.field.node.event.field_date
@@ -16,15 +16,14 @@ dependencies:
     - field.field.node.event.field_tags
     - node.type.event
   module:
-    - address
-    - datetime
     - ds
     - fences
-    - link
-    - options
-    - text
+    - layout_builder
     - user
 third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
   ds:
     layout:
       id: ds_1col
@@ -32,7 +31,8 @@ third_party_settings:
         disable_css: false
         entity_classes: all_classes
         classes:
-          layout_class: {  }
+          layout_class:
+            container: container
           content: {  }
         wrappers:
           content: div
@@ -44,12 +44,9 @@ third_party_settings:
     regions:
       content:
         - node_title
-        - field_date
-        - field_online_or_in_person
-        - field_address
-        - field_link
-        - body
+        - node_post_date
         - node_link
+        - field_tags
     fields:
       node_title:
         plugin_id: node_title
@@ -63,36 +60,32 @@ third_party_settings:
           class: ''
       node_link:
         plugin_id: node_link
-        weight: 6
+        weight: 2
         label: hidden
         formatter: default
-id: node.event.teaser
+        settings:
+          'link text': 'Read more'
+          'link class': 'btn btn-primary'
+          wrapper: ''
+          class: ''
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_olivero_medium
+id: node.event.resource_teaser
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: resource_teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_address:
-    type: address_default
+  field_tags:
+    type: entity_reference_label
     label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_date:
-    type: datetime_custom
-    label: hidden
     settings:
-      timezone_override: ''
-      date_format: 'jS F Y g:ia'
+      link: true
     third_party_settings:
+      ds:
+        ds_limit: ''
       fences:
         fences_field_tag: div
         fences_field_classes: ''
@@ -100,42 +93,18 @@ content:
         fences_field_items_wrapper_classes: ''
         fences_field_item_tag: div
         fences_field_item_classes: ''
-        fences_label_tag: div
+        fences_label_tag: h5
         fences_label_classes: ''
-    weight: 1
-    region: content
-  field_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: nofollow
-      target: _blank
-    third_party_settings:
-      fences:
-        fences_field_tag: div
-        fences_field_classes: 'btn btn-secondary'
-        fences_field_items_wrapper_tag: none
-        fences_field_items_wrapper_classes: ''
-        fences_field_item_tag: div
-        fences_field_item_classes: ''
-        fences_label_tag: div
-        fences_label_classes: ''
-    weight: 4
-    region: content
-  field_online_or_in_person:
-    type: list_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
+  body: true
+  field_address: true
+  field_date: true
   field_gallery: true
   field_image_media: true
+  field_link: true
+  field_online_or_in_person: true
   field_references: true
   field_resource: true
-  field_tags: true
   links: true

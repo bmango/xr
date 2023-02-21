@@ -8,6 +8,8 @@ ft-layout-builder: false
 classes:
   region:
     - container
+    - align-self-start
+    - justify-content-start
   field:
     - container
 use_field_names: true

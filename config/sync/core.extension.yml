@@ -32,6 +32,7 @@ module:
   file: 0
   filter: 0
   gin_toolbar: 0
+  google_analytics: 0
   help: 0
   history: 0
   image: 0
@@ -84,4 +85,5 @@ theme:
   gin: 0
   bootstrap5: 0
   xr: 0
+  stable9: 0
 profile: standard

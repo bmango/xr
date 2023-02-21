@@ -1,0 +1,23 @@
+uuid: 02b6f41f-229c-44de-a87c-24a12b3a1c8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource
+    - node.type.event
+id: node.event.field_resource
+field_name: field_resource
+entity_type: node
+bundle: event
+label: Resource
+description: 'Do you want to display this event as a resource? This means it will also display on the resources page. Ie: does it have useful links etc that people can refer to?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

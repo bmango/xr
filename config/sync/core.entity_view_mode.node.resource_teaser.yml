@@ -1,0 +1,10 @@
+uuid: 3be54a9e-adb5-46fc-b544-5e0ec7295161
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.resource_teaser
+label: 'Resource Teaser'
+targetEntityType: node
+cache: true

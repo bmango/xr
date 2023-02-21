@@ -1,31 +1,22 @@
-uuid: e2e6f1d7-a376-4cdb-9004-002305663d9b
+uuid: 19847587-8d8c-4623-bf19-0bc6d8613d2d
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.list
-    - field.field.node.event.body
-    - field.field.node.event.field_address
-    - field.field.node.event.field_date
-    - field.field.node.event.field_gallery
-    - field.field.node.event.field_image_media
-    - field.field.node.event.field_link
-    - field.field.node.event.field_online_or_in_person
-    - field.field.node.event.field_references
-    - field.field.node.event.field_resource
-    - field.field.node.event.field_tags
-    - node.type.event
+    - core.entity_view_mode.node.resource_teaser
+    - field.field.node.article.body
+    - field.field.node.article.field_format
+    - field.field.node.article.field_image_media
+    - field.field.node.article.field_media_files
+    - field.field.node.article.field_references
+    - field.field.node.article.field_tags
+    - node.type.article
   module:
-    - datetime
     - ds
     - fences
     - layout_builder
-    - options
     - user
 third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
   ds:
     layout:
       id: ds_1col
@@ -33,7 +24,8 @@ third_party_settings:
         disable_css: false
         entity_classes: all_classes
         classes:
-          layout_class: {  }
+          layout_class:
+            container: container
           content: {  }
         wrappers:
           content: div
@@ -44,43 +36,52 @@ third_party_settings:
         label: ''
     regions:
       content:
-        - links
         - node_title
-        - field_date
-        - field_online_or_in_person
+        - node_post_date
+        - field_format
         - node_link
+        - field_tags
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
           link: true
           'link class': ''
-          wrapper: h3
+          wrapper: h2
           class: ''
       node_link:
         plugin_id: node_link
-        weight: 4
+        weight: 3
         label: hidden
         formatter: default
         settings:
-          'link text': Details
+          'link text': 'Read more'
           'link class': 'btn btn-primary'
           wrapper: ''
           class: ''
-id: node.event.list
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_olivero_medium
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 83jX5ChAGdMzOxiDA_B1NjgebVMuD8lNVDgClg_QVP8
+id: node.article.resource_teaser
 targetEntityType: node
-bundle: event
-mode: list
+bundle: article
+mode: resource_teaser
 content:
-  field_date:
-    type: datetime_custom
-    label: hidden
+  field_format:
+    type: entity_reference_label
+    label: inline
     settings:
-      timezone_override: ''
-      date_format: 'jS F Y g:ia'
+      link: true
     third_party_settings:
       fences:
         fences_field_tag: div
@@ -89,37 +90,32 @@ content:
         fences_field_items_wrapper_classes: ''
         fences_field_item_tag: div
         fences_field_item_classes: ''
-        fences_label_tag: div
+        fences_label_tag: span
         fences_label_classes: ''
     weight: 2
     region: content
-  field_online_or_in_person:
-    type: list_default
-    label: hidden
-    settings: {  }
+  field_tags:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
     third_party_settings:
+      ds:
+        ds_limit: ''
       fences:
         fences_field_tag: div
         fences_field_classes: ''
         fences_field_items_wrapper_tag: none
         fences_field_items_wrapper_classes: ''
-        fences_field_item_tag: div
+        fences_field_item_tag: span
         fences_field_item_classes: ''
         fences_label_tag: div
         fences_label_classes: ''
-    weight: 3
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 4
     region: content
 hidden:
   body: true
-  field_address: true
-  field_gallery: true
   field_image_media: true
-  field_link: true
+  field_media_files: true
   field_references: true
-  field_resource: true
-  field_tags: true
+  links: true

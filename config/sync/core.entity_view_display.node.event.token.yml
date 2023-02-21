@@ -7,9 +7,13 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_address
     - field.field.node.event.field_date
+    - field.field.node.event.field_gallery
     - field.field.node.event.field_image_media
     - field.field.node.event.field_link
     - field.field.node.event.field_online_or_in_person
+    - field.field.node.event.field_references
+    - field.field.node.event.field_resource
+    - field.field.node.event.field_tags
     - node.type.event
   module:
     - address
@@ -94,4 +98,8 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_gallery: true
+  field_references: true
+  field_resource: true
+  field_tags: true
