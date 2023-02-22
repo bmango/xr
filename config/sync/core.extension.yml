@@ -86,4 +86,4 @@ theme:
   bootstrap5: 0
   xr: 0
   stable9: 0
-profile: standard
+profile: minimal
