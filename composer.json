@@ -16,7 +16,11 @@
     ],
     "require": {
         "php": "^8.1",
-        "composer/installers": "^2.0",
+        "civicrm/civicrm-asset-plugin": "~1.1",
+        "civicrm/civicrm-core": "dev-master",
+        "civicrm/civicrm-drupal-8": "dev-master",
+        "civicrm/civicrm-packages": "dev-master",
+        "composer/installers": "^1.0",
         "drupal/address": "^1.11",
         "drupal/admin_toolbar": "^3.3",
         "drupal/backup_migrate": "^5.0",
@@ -41,7 +45,7 @@
         "drupal/twig_tweak": "^3.2",
         "drupal/user_redirect": "^2.0",
         "drupal/views_slideshow": "^5.0",
-        "drush/drush": "^11.4"
+        "drush/drush": "*"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -53,7 +57,11 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "civicrm/civicrm-asset-plugin": true,
+            "civicrm/composer-downloads-plugin": true,
+            "civicrm/composer-compile-plugin": true
         },
         "sort-packages": true
     },
