@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a0376b3c700503235e14f38461ecba8",
+    "content-hash": "0efaf82e5540ffc03c6d3e217e7f3a31",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -633,41 +633,36 @@
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.2.3",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "cbb50cc86775f14972003f797b61e232788bee1f"
+                "reference": "b377db7e9435c50c4e019c26ec164b547e754ca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/cbb50cc86775f14972003f797b61e232788bee1f",
-                "reference": "cbb50cc86775f14972003f797b61e232788bee1f",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/b377db7e9435c50c4e019c26ec164b547e754ca0",
+                "reference": "b377db7e9435c50c4e019c26ec164b547e754ca0",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0 || ^2 || ^3",
                 "php": ">=7.1.3",
-                "symfony/console": "^4|^5|^6",
-                "symfony/finder": "^4|^5|^6"
+                "symfony/console": "^4 || ^5 || ^6",
+                "symfony/finder": "^4 || ^5 || ^6"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.4.2",
-                "phpunit/phpunit": ">=7",
+                "phpunit/phpunit": "^7 || ^8 || ^9",
                 "squizlabs/php_codesniffer": "^3",
-                "symfony/var-dumper": "^4|^5|^6",
-                "symfony/yaml": "^4|^5|^6",
-                "yoast/phpunit-polyfills": "^0.2.0"
+                "symfony/var-dumper": "^4 || ^5 || ^6",
+                "symfony/yaml": "^4 || ^5 || ^6",
+                "yoast/phpunit-polyfills": "^1"
             },
             "suggest": {
                 "symfony/var-dumper": "For using the var_dump formatter"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Consolidation\\OutputFormatters\\": "src"
@@ -686,9 +681,9 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.2.3"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.2.4"
             },
-            "time": "2022-10-17T04:01:40+00:00"
+            "time": "2023-02-24T03:39:10+00:00"
         },
         {
             "name": "consolidation/robo",
@@ -765,16 +760,16 @@
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.0.5",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3"
+                "reference": "714b09fdf0513f83292874bb12de0566066040c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/8a64bdd8daf5faa8e85f56534dd99caf928164b3",
-                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/714b09fdf0513f83292874bb12de0566066040c2",
+                "reference": "714b09fdf0513f83292874bb12de0566066040c2",
                 "shasum": ""
             },
             "require": {
@@ -814,9 +809,9 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.0.5"
+                "source": "https://github.com/consolidation/self-update/tree/2.1.0"
             },
-            "time": "2022-02-09T22:44:24+00:00"
+            "time": "2023-02-21T19:33:55+00:00"
         },
         {
             "name": "consolidation/site-alias",
@@ -1626,7 +1621,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap5.git",
-                "reference": "cfa06590a0db52e00d3ccaff946d7aeaa38fe7f9"
+                "reference": "9a24d8f1c23a313c09a150f36b12956c8b516e29"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10"
@@ -1637,8 +1632,8 @@
                     "dev-3.0.x": "3.0.x-dev"
                 },
                 "drupal": {
-                    "version": "3.0.2+1-dev",
-                    "datestamp": "1675690603",
+                    "version": "3.0.4+1-dev",
+                    "datestamp": "1677069406",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7606,7 +7601,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "drupal/block_field": 5,
         "drupal/bootstrap5": 20,
