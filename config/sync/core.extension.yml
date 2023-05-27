@@ -55,6 +55,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  profile_switcher: 0
   redirect: 0
   search: 0
   settings_tray: 0
@@ -78,7 +79,7 @@ module:
   ds_extras: 2
   views: 10
   paragraphs: 11
-  standard: 1000
+  minimal: 1000
 theme:
   olivero: 0
   claro: 0
@@ -86,4 +87,4 @@ theme:
   bootstrap5: 0
   xr: 0
   stable9: 0
-profile: standard
+profile: minimal
