@@ -1,14 +1,14 @@
 _core:
-  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
-uuid: b8869d7c-a8dc-4833-8d05-ce88bbefce14
-name: 'Extinction Rebellion Wandsworth'
-mail: info@xrwandsworth.org.uk
+uuid: 307715e4-a151-48ea-9c22-3ca65cd8f472
+name: 'Just Skate'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

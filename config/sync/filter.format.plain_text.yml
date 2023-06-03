@@ -1,4 +1,4 @@
-uuid: c07b901c-41e3-4817-b52c-08b693bc47f3
+uuid: e9ce76a1-3b02-4a1c-b5c5-37e5fae82cc6
 langcode: en
 status: true
 dependencies: {  }
@@ -6,7 +6,7 @@ _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
 name: 'Plain text'
 format: plain_text
-weight: -7
+weight: 10
 filters:
   filter_html_escape:
     id: filter_html_escape
