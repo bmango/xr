@@ -21,6 +21,8 @@ content:
     settings:
       max_width: 500
       max_height: 400
+      loading:
+        attribute: eager
     third_party_settings:
       fences:
         fences_field_tag: div
